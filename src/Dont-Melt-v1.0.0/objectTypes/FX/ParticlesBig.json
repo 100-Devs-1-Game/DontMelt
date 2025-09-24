@@ -1,0 +1,32 @@
+{
+	"name": "ParticlesBig",
+	"plugin-id": "Particles",
+	"sid": 559586081209600,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "doodlesprite",
+			"name": "DoodleSprite"
+		},
+		{
+			"effectId": "blacknwhite",
+			"name": "BlackWhite"
+		}
+	],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5676731,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

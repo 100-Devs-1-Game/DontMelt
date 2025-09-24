@@ -1,0 +1,16 @@
+{
+	"name": "Construct3",
+	"plugin-id": "SVGPicture",
+	"sid": 459293325717911,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 349923673253077
+		}
+	],
+	"effectTypes": []
+}

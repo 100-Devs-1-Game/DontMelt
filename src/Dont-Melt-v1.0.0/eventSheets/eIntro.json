@@ -1,0 +1,118 @@
+{
+	"name": "eIntro",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Intro sequence."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 296799858532385
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 331339913284807
+				},
+				{
+					"type": "comment",
+					"text": "Reset everything."
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 686051183421119,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
+					"id": "reset-persisted-objects",
+					"objectClass": "System",
+					"sid": 581558605881046
+				},
+				{
+					"type": "comment",
+					"text": "Contruct 3 logo fade in."
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Construct3",
+					"sid": 167255164490680,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"FadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.5",
+						"ease": "easeoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 953309071735615
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 116346259799013,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Contruct 3 logo fade out."
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Construct3",
+					"sid": 291626443249535,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"FadeOut\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "easeinquad",
+						"destroy-on-complete": "yes",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 819900354237716
+				},
+				{
+					"type": "comment",
+					"text": "Game start."
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 103744098841367,
+					"parameters": {
+						"layout": "0-0"
+					}
+				}
+			],
+			"sid": 963068355052223
+		}
+	],
+	"sid": 479013623973588
+}

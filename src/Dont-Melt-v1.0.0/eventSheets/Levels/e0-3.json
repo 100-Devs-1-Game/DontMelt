@@ -1,0 +1,59 @@
+{
+	"name": "e0-3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eGame"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Star",
+					"sid": 124734859621096,
+					"parameters": {
+						"object": "ball"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Star",
+					"sid": 721883872922729,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 361382778672893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Star",
+					"sid": 307614644657581,
+					"parameters": {
+						"object": "ball"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Star",
+					"sid": 901011767873926,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 157351856353681
+		}
+	],
+	"sid": 485674643044677
+}

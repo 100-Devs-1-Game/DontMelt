@@ -1,0 +1,23 @@
+{
+	"name": "UIbuttons",
+	"plugin-id": "Sprite",
+	"sid": 574232785491587,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anickiton999_CustomTrigger",
+			"name": "CustomTrigger",
+			"sid": 610072134368682
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"noBlue",
+		"No",
+		"yesBlue",
+		"Yea",
+		"goBack",
+		"Reset",
+		"resetLevel"
+	]
+}

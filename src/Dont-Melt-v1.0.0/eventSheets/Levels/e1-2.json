@@ -1,0 +1,242 @@
+{
+	"name": "e1-2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eGame"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CollisionTrigger",
+					"sid": 776898610892071,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 870348412609708,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 454429205423403,
+							"parameters": {
+								"object": "CollisionTrigger"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 668493037779506
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ground",
+							"sid": 282077423273625,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Ground",
+							"sid": 568259008961043,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Opacity\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 252838042600335
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 863715111119688,
+							"parameters": {
+								"object": "CollisionTrigger"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 522481559956407
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ground",
+							"sid": 875536390350502,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Ground",
+							"sid": 606916790831624,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Opacity\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 938729540238132
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CollisionTrigger",
+					"sid": 696368613731598,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 916259121045510,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 508355247592937,
+							"parameters": {
+								"object": "CollisionTrigger"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 728249861317318
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ground",
+							"sid": 900981742025431,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Ground",
+							"sid": 370556652418621,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Opacity\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 155339870946998
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 537875715299321,
+							"parameters": {
+								"object": "CollisionTrigger"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 319555504957331
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ground",
+							"sid": 527826090072010,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Ground",
+							"sid": 845149417148018,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Opacity\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 219266154623899
+				}
+			]
+		}
+	],
+	"sid": 797042727828190
+}

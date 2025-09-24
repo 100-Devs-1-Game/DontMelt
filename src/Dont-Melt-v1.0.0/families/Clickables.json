@@ -1,0 +1,36 @@
+{
+	"name": "Clickables",
+	"plugin-id": "Sprite",
+	"sid": 686575535614791,
+	"instanceVariables": [
+		{
+			"name": "UnderMouse",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 960255749290915
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ball",
+		"BreakableFloor",
+		"BreakableWall",
+		"Star",
+		"goBack",
+		"noBlue",
+		"No",
+		"RedButton",
+		"redLight",
+		"USureBlue",
+		"USure",
+		"Yea",
+		"yesBlue",
+		"Reset",
+		"resetLevel",
+		"saveMyPc",
+		"saveMyPcTrack",
+		"PlayerClickbox"
+	]
+}

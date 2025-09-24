@@ -1,0 +1,925 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 44902,
+	"name": "Dont Melt",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "CV_Tick",
+			"name": "Tick",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "2.0.1.1"
+		},
+		{
+			"type": "plugin",
+			"id": "FileSystem",
+			"name": "File system",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Null",
+			"name": "Null",
+			"author": "Dave Caruso",
+			"bundled": false,
+			"version": "1.0.0"
+		},
+		{
+			"type": "plugin",
+			"id": "Overboy_JSON",
+			"name": "JSON+",
+			"author": "Overboy",
+			"bundled": false,
+			"version": "2.2"
+		},
+		{
+			"type": "plugin",
+			"id": "Overboy_Utils",
+			"name": "Utils",
+			"author": "Overboy",
+			"bundled": false,
+			"version": "2.4"
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "SVG Picture",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline controller",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anickiton999_CustomTrigger",
+			"name": "Custom trigger",
+			"author": "Anickiton999",
+			"bundled": false,
+			"version": "1.1.0.0"
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "skymen_mesh_rotate",
+			"name": "Mesh Rotate",
+			"author": "skymen",
+			"bundled": false,
+			"version": "2.0.1.0",
+			"sdkVersion": 2
+		},
+		{
+			"type": "behavior",
+			"id": "skymen_tiled_sprite",
+			"name": "tiled_sprite",
+			"author": "skymen",
+			"bundled": false,
+			"version": "1.0.0.7"
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "alphadither",
+			"name": "Alpha Dithering",
+			"author": "skymen, Wagner Scholl Lemos",
+			"bundled": false,
+			"version": "1.0.0.6"
+		},
+		{
+			"type": "effect",
+			"id": "blacknwhite",
+			"name": "Black & white",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "bulge",
+			"name": "Bulge",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "doodlesprite",
+			"name": "Doodle Sprite",
+			"author": "Richard Lems",
+			"bundled": false,
+			"version": "1.0.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hsladjust",
+			"name": "Adjust HSL",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "normalmapext",
+			"name": "normalmap extended",
+			"author": "Donelwero and Matriax and Mikal",
+			"bundled": false,
+			"version": "1.4.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BlackHole",
+			"name": "BlackHole",
+			"author": "skymen",
+			"bundled": false,
+			"version": "1.0.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "somebody_dots",
+			"name": "Dots",
+			"author": "somebody",
+			"bundled": false,
+			"version": "1.0.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "warpobjectmask",
+			"name": "Warp object mask",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "5yy1kpszfvf",
+	"objectTypes": {
+		"items": [
+			"Mouse",
+			"Browser",
+			"Audio",
+			"Utils",
+			"Keyboard",
+			"JSON",
+			"AJAX",
+			"LocalStorage",
+			"FileSystem",
+			"Tick",
+			"TimelineController"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"ParticlesBig",
+					"ParticlesMid",
+					"Mist",
+					"StarWarp",
+					"ZMist",
+					"snowBall",
+					"snowBallParticles",
+					"StarParticles",
+					"Confetti",
+					"ConfettiParticles"
+				],
+				"subfolders": [],
+				"name": "FX"
+			},
+			{
+				"items": [
+					"Construct3"
+				],
+				"subfolders": [],
+				"name": "Intro"
+			},
+			{
+				"items": [
+					"Cupbottom",
+					"Cuptop",
+					"MovingPlatform",
+					"Player",
+					"Star",
+					"StopSpring",
+					"StrongSpring",
+					"WallSpring",
+					"WeakSpring",
+					"Tilemap",
+					"Character",
+					"Ground",
+					"MovingPlatform3D",
+					"RedButton",
+					"MovingGround",
+					"froster",
+					"FrosterCollision",
+					"StreamerPoint",
+					"Streamer",
+					"Fan",
+					"JumpThroughGround",
+					"Heat",
+					"redLight",
+					"Umbrella",
+					"BreakableFloor",
+					"IndependentSlope",
+					"IndependentFloor",
+					"BreakableWall",
+					"IndependentWall",
+					"TheChillZone",
+					"FanLift",
+					"Dice",
+					"catArm",
+					"fire",
+					"CottonBalls",
+					"Pushable",
+					"Rope",
+					"PlayerClickbox"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"hint0",
+							"heatLampLabel",
+							"hint1",
+							"hint2"
+						],
+						"subfolders": [],
+						"name": "Hints"
+					}
+				],
+				"name": "Objects"
+			},
+			{
+				"items": [
+					"DeathIcon",
+					"StarIcon",
+					"DeathCount",
+					"EndText",
+					"ThankYou",
+					"DeathDarkness",
+					"StarCount",
+					"DontMelt",
+					"Instagram",
+					"Soundcloud",
+					"Reset",
+					"No",
+					"Yea",
+					"USure",
+					"ball",
+					"BallTrack",
+					"MeltMeter",
+					"NoNudge",
+					"forRealNow",
+					"WarningText",
+					"resetLevel",
+					"goBack",
+					"Or",
+					"noBlue",
+					"USureBlue",
+					"yesBlue",
+					"Cursor",
+					"saveMyPc",
+					"saveMyPcTrack",
+					"StarCount2"
+				],
+				"subfolders": [],
+				"name": "UI"
+			},
+			{
+				"items": [
+					"LayoutManager",
+					"slope",
+					"CameraLock",
+					"SimpleSlope",
+					"CollisionTrigger",
+					"InvisibleMask",
+					"PhysicsAnchor",
+					"PhysicsObject"
+				],
+				"subfolders": [],
+				"name": "Gizmos"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Tape",
+							"Glitter",
+							"GlitterNormal"
+						],
+						"subfolders": [],
+						"name": "Overlays"
+					},
+					{
+						"items": [
+							"CardboardBackground",
+							"PaperBackground"
+						],
+						"subfolders": [],
+						"name": "Backgrounds"
+					},
+					{
+						"items": [
+							"CardboardTexture",
+							"CardboardSideTexture",
+							"CardboardFrontTexture",
+							"Snow",
+							"Newspaper"
+						],
+						"subfolders": [],
+						"name": "Textures"
+					}
+				],
+				"name": "Backgrounds & Overlays & Textures"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"Glitter",
+				"GlitterNormal"
+			]
+		},
+		{
+			"members": [
+				"Player",
+				"PlayerClickbox"
+			]
+		}
+	],
+	"families": {
+		"items": [
+			"Breakable",
+			"UIbuttons",
+			"Clickables"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Intro",
+			"Rip"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"0-0",
+							"0-1",
+							"0-2",
+							"0-3",
+							"0-4",
+							"0-5",
+							"0-6",
+							"0-7",
+							"Win!"
+						],
+						"subfolders": [],
+						"name": "World 0"
+					},
+					{
+						"items": [
+							"1-1",
+							"1-2",
+							"1-3",
+							"Real Win",
+							"1-4",
+							"1-5"
+						],
+						"subfolders": [],
+						"name": "World 1"
+					}
+				],
+				"name": "Levels"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"eGame",
+			"eIntro"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"e1-1",
+					"e1-2",
+					"e0-3",
+					"e1-3"
+				],
+				"subfolders": [],
+				"name": "Levels"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 188812025565523,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hitHurt.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 852265513787560,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pickupCoin.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 489359838992704,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "powerUp.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 375436347623434,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 749762377199691,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "damage.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 854669908389740,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "lightSwitch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 477877561142184,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 218105946158884,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "newStar.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 538971815959336,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "fastRelease.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 544594299843088,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "grab.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 867120521915161,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "show.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 577445531283974,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "die.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 503810763915123,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "land.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 403930546198991,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "click2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 713786799208825,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "break.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 691554515948434,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 468381784354325,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "theme 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335085337237941,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "win.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 384985914178076,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "win 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 723558182554813,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "win 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 560068494104177,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 791802975515422,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 219259972085749,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 131222279465676,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 351016432546824,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 148039042505627,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 334870488019617,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 292083325052965,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "c3logo-lightbg.svg",
+					"type": "image/svg+xml",
+					"sid": 291136761252968,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "blank-save-data.json",
+					"type": "application/json",
+					"sid": 656258837965274,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Cat"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "Chrishie",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "io.itch.chrishie",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "any",
+		"webgpu": "auto",
+		"gpuPreference": "default",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "Intro"
+}

@@ -1,0 +1,490 @@
+{
+	"name": "e1-3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eGame"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "snowBall",
+					"sid": 197105415480981
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "snowBall",
+					"sid": 685390663996166,
+					"parameters": {
+						"z": "random(-20, 60)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "snowBall",
+					"sid": 711246264371150,
+					"parameters": {
+						"instance-variable": "zDir",
+						"value": "choose(0,1)"
+					}
+				}
+			],
+			"sid": 100623312110042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "snowBall",
+					"sid": 911343330610850,
+					"parameters": {
+						"instance-variable": "zDir",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "snowBall",
+					"sid": 940526605336622,
+					"parameters": {
+						"z": "Self.ZElevation + random(-50, 0) * dt"
+					}
+				}
+			],
+			"sid": 254511361166109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "snowBall",
+					"sid": 770617511058080,
+					"parameters": {
+						"instance-variable": "zDir",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "snowBall",
+					"sid": 317119926228945,
+					"parameters": {
+						"z": "Self.ZElevation + random(50) * dt"
+					}
+				}
+			],
+			"sid": 104846089201450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-overlapping-point",
+					"objectClass": "System",
+					"sid": 235231391275535,
+					"parameters": {
+						"object": "Dice",
+						"x": "Functions.MouseToZX(Dice.ZElevation, Dice.LayerName)",
+						"y": "Functions.MouseToZY(Dice.ZElevation, Dice.LayerName)"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Dice",
+					"sid": 917503355365634
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cursor",
+					"sid": 612377608865525,
+					"parameters": {
+						"animation": "\"point\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 464573753403508,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 718694532876822,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "Dice",
+							"sid": 539256505873944,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 946248360256534,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Dice",
+									"sid": 554989535934435,
+									"parameters": {
+										"instance-variable": "clicks",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 380999849414099,
+									"parameters": {
+										"audio-file": "break",
+										"loop": "not-looping",
+										"volume": "-12",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dice",
+									"sid": 332235421506264,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 945141404915411,
+									"parameters": {
+										"object-to-create": "Star",
+										"layer": "\"Player\"",
+										"x": "Dice.X",
+										"y": "Dice.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "add-child",
+									"objectClass": "Dice",
+									"sid": 809548826361763,
+									"parameters": {
+										"child": "Star",
+										"transform-x": true,
+										"transform-y": true,
+										"transform-w": false,
+										"transform-h": false,
+										"transform-a": true,
+										"transform-o": false,
+										"transform-z-elevation": true,
+										"transform-visibility": false,
+										"destroy-with-parent": false
+									}
+								}
+							],
+							"sid": 629943388000937
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Dice",
+									"sid": 999215356389257,
+									"parameters": {
+										"instance-variable": "clicks",
+										"comparison": 2,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 223358372762971,
+									"parameters": {
+										"audio-file": "damage",
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Dice",
+									"sid": 226705452763715,
+									"parameters": {
+										"instance-variable": "clicks",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Dice",
+									"sid": 453649094933675,
+									"parameters": {
+										"width": "24",
+										"height": "24"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Dice",
+									"sid": 934003204300508,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"Size\"",
+										"property": "size",
+										"end-x": "16",
+										"end-y": "16",
+										"time": "0.3",
+										"ease": "easeoutquad",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-value",
+									"objectClass": "Dice",
+									"sid": 694496950899354,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"Z\"",
+										"start-value": "3",
+										"end-value": "2",
+										"time": "0.3",
+										"ease": "easeoutquad",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 879354873455974
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "Dice",
+					"sid": 125800038044906,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Z\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-height",
+					"objectClass": "Dice",
+					"sid": 381655578618345,
+					"parameters": {
+						"z-height": "Self.Tween.Value(\"Z\")"
+					}
+				}
+			],
+			"sid": 399509153070196
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FanLift",
+					"sid": 249656063525175,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 800809551958216,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Player",
+							"sid": 411769982066307,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "416"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "FanLift",
+							"sid": 965869943158998,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 507333279072134
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 592763819152221
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "FanLift",
+							"sid": 268567810884561,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 818869388639733
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Ground",
+					"sid": 880999737490219,
+					"parameters": {
+						"object": "FanLift"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Ground",
+					"sid": 355306395897748,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 951510121220430
+		},
+		{
+			"eventType": "comment",
+			"text": "Slingshot on a rope at the end."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PhysicsAnchor",
+					"sid": 445119811042351
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "PhysicsAnchor",
+					"sid": 355768763925676,
+					"parameters": {
+						"child": "PhysicsObject",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-limited-revolute-joint",
+					"objectClass": "PhysicsAnchor",
+					"sid": 828269605262207,
+					"behaviorType": "Physics",
+					"parameters": {
+						"this-image-point": "0",
+						"object": "PhysicsObject",
+						"lower-angle": "-60",
+						"upper-angle": "60"
+					}
+				}
+			],
+			"sid": 300113402893475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "FanLift",
+					"sid": 233431386788604,
+					"parameters": {
+						"object": "CollisionTrigger"
+					}
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "CollisionTrigger",
+					"sid": 366436370320320,
+					"parameters": {
+						"parent": "PhysicsObject",
+						"which": "all"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-torque-towards-angle",
+					"objectClass": "PhysicsObject",
+					"sid": 787622679526511,
+					"behaviorType": "Physics",
+					"parameters": {
+						"torque": "Utils.remap(abs(FanLift.BBoxRight - CollisionTrigger.BBoxRight), 0, CollisionTrigger.Width, 1, 0) * dt",
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 105288066836380
+		}
+	],
+	"sid": 389442969907995
+}

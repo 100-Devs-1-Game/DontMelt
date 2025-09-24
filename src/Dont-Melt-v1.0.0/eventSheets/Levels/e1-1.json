@@ -1,0 +1,170 @@
+{
+	"name": "e1-1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eGame"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-children",
+					"objectClass": "RedButton",
+					"sid": 989752120675755,
+					"parameters": {
+						"child": "MovingGround",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 964841355924182,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "RedButton",
+							"sid": 938207724442666,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 936232051396480
+						}
+					],
+					"actions": [
+						{
+							"customAction": "Move Y",
+							"objectClass": "MovingGround",
+							"sid": 119164707515087
+						}
+					],
+					"sid": 935507584634364
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "MovingGround",
+							"sid": 856556728607773,
+							"parameters": {
+								"comparison": 0,
+								"y-co-ordinate": "Self.initial_y"
+							}
+						},
+						{
+							"id": "pick-children",
+							"objectClass": "MovingGround",
+							"sid": 310586504143549,
+							"parameters": {
+								"child": "SimpleSlope",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "SimpleSlope",
+							"sid": 887871969997733,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 179032021583532
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "MovingGround",
+							"sid": 973416056027251,
+							"parameters": {
+								"comparison": 0,
+								"y-co-ordinate": "Self.initial_y"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "pick-children",
+							"objectClass": "MovingGround",
+							"sid": 297498068102783,
+							"parameters": {
+								"child": "SimpleSlope",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "SimpleSlope",
+							"sid": 416935983150621,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 473084606362792
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 997632212416570,
+					"parameters": {
+						"object": "PaperBackground",
+						"expression": "PaperBackground.IID",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 548583017960512,
+					"parameters": {
+						"object": "PaperBackground"
+					}
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 354619997910702,
+					"parameters": {
+						"object": "BallTrack",
+						"expression": "BallTrack.IID",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "BallTrack",
+					"sid": 760047726746666,
+					"parameters": {
+						"x": "clamp(Player.X, PaperBackground.BBoxLeft + BallTrack.Width / 2, LayoutWidth - BallTrack.Width / 2)"
+					}
+				}
+			],
+			"sid": 890147518470134
+		}
+	],
+	"sid": 464327663925209
+}

@@ -1,0 +1,52 @@
+{
+	"name": "Breakable",
+	"plugin-id": "Sprite",
+	"sid": 347883164474351,
+	"instanceVariables": [
+		{
+			"name": "initial_x",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 555184805025091
+		},
+		{
+			"name": "initial_y",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 686557595133794
+		},
+		{
+			"name": "ShakeMag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 703129182446885
+		},
+		{
+			"name": "clicks",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 697478704365835
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 802713604054116
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "doodlesprite",
+			"name": "DoodleSprite"
+		}
+	],
+	"members": [
+		"BreakableFloor",
+		"BreakableWall"
+	]
+}

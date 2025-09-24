@@ -1,0 +1,10 @@
+{
+	"name": "WarningText",
+	"plugin-id": "Text",
+	"sid": 562204609523556,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

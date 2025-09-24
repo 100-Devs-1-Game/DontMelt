@@ -1,0 +1,38 @@
+{
+	"name": "LayoutManager",
+	"plugin-id": "Null",
+	"sid": 451261553180003,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "World_ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 860835170617039
+		},
+		{
+			"name": "Level_ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 556102140368153
+		},
+		{
+			"name": "DisabeNudge",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 335350346579797
+		},
+		{
+			"name": "MeltRate",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 665691769465861
+		}
+	],
+	"behaviorTypes": []
+}

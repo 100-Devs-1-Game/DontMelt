@@ -1,0 +1,113 @@
+{
+	"name": "saveMyPcTrack",
+	"plugin-id": "Sprite",
+	"sid": 582437281048214,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 123398068775188
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 185004890254155
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 640,
+						"height": 640,
+						"originX": 0.5,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1556606,
+						"collisionPoly": {
+							"points": [
+								0.3734375,
+								0.42343751192092893,
+								0.625,
+								0.4234375,
+								0.625,
+								0.50625,
+								0.3734375,
+								0.5062499120831491
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.25,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.75,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 640,
+						"height": 640,
+						"originX": 0.5,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8442303,
+						"collisionPoly": {
+							"points": [
+								0.3734375,
+								0.42343751192092893,
+								0.625,
+								0.4234375,
+								0.625,
+								0.50625,
+								0.3734375,
+								0.5062499120831491
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.25,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.75,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 858672013149277,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

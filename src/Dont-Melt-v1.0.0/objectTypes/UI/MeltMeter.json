@@ -1,0 +1,58 @@
+{
+	"name": "MeltMeter",
+	"plugin-id": "Sprite",
+	"sid": 611901254662432,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "skymen_tiled_sprite",
+			"name": "tiled_sprite",
+			"sid": 646809774815431
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1982,
+						"height": 300,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2073236,
+						"collisionPoly": {
+							"points": [
+								0.01564076690211907,
+								0.1,
+								0.984359233097881,
+								0.1,
+								0.984359233097881,
+								0.9,
+								0.01564076690211907,
+								0.9
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 352591405217234,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "CardboardSideTexture",
+	"plugin-id": "TiledBg",
+	"sid": 338350710051461,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 8,
+		"height": 1200,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 8668658,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

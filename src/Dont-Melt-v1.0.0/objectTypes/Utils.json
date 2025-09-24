@@ -1,0 +1,12 @@
+{
+	"name": "Utils",
+	"plugin-id": "Overboy_Utils",
+	"sid": 782472369225191,
+	"singleglobal-inst": {
+		"type": "Utils",
+		"properties": {},
+		"uid": 2,
+		"sid": 165972415130272,
+		"tags": ""
+	}
+}

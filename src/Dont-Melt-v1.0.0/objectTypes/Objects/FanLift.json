@@ -1,0 +1,60 @@
+{
+	"name": "FanLift",
+	"plugin-id": "Sprite",
+	"sid": 536426242023688,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 392428224634816
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7640317,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Top",
+								"x": 0.5,
+								"y": 0
+							},
+							{
+								"name": "Bottom",
+								"x": 0.5,
+								"y": 1
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 420458600116003,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

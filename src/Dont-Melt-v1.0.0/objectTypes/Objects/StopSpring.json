@@ -1,0 +1,63 @@
+{
+	"name": "StopSpring",
+	"plugin-id": "Sprite",
+	"sid": 878115766027991,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 619856066483560
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "doodlesprite",
+			"name": "DoodleSprite"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.25,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5063739,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.1875,
+								1,
+								0.1875,
+								1,
+								0.5,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 992081997291677,
+				"name": "Defualt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

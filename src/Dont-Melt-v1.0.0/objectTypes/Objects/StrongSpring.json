@@ -1,0 +1,85 @@
+{
+	"name": "StrongSpring",
+	"plugin-id": "Sprite",
+	"sid": 493991124847563,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "BounceAngle",
+			"type": "number",
+			"desc": "For trick springs, the angle to bounce the player at.",
+			"show": true,
+			"sid": 457674966586929
+		},
+		{
+			"name": "initial_x",
+			"type": "number",
+			"desc": "",
+			"show": false,
+			"sid": 601559312344498
+		},
+		{
+			"name": "initial_y",
+			"type": "number",
+			"desc": "",
+			"show": false,
+			"sid": 254293401802515
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 701142878465328
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "doodlesprite",
+			"name": "DoodleSprite"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.25,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 625241,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.1875,
+								1,
+								0.1875,
+								1,
+								0.5,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 866453550857202,
+				"name": "Defualt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

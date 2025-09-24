@@ -1,0 +1,96 @@
+{
+	"name": "Glitter",
+	"plugin-id": "Sprite",
+	"sid": 954653575251124,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "skymen_tiled_sprite",
+			"name": "tiled_sprite",
+			"sid": 724336335857275
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9373647,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1920,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8173136,
+						"collisionPoly": {
+							"points": [
+								0.07135416666666666,
+								0,
+								0.99375,
+								0.019762845849802372,
+								1,
+								0.08695652173913043,
+								0.9942708333333333,
+								0.8369565217391305,
+								0.9744791666666667,
+								0.9120553359683794,
+								0.8390625,
+								1,
+								0.13072916666666667,
+								0.9387351778656127,
+								0.0036458333333333334,
+								0.782608695652174,
+								0.021354166666666667,
+								0.003952569169960474
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1920,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2045155,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 690333504993363,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

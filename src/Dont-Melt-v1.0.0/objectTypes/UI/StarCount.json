@@ -1,0 +1,30 @@
+{
+	"name": "StarCount",
+	"plugin-id": "Spritefont2",
+	"sid": 717705262088178,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"editorNewInstanceTemplateName": "Default",
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "Custom",
+			"sid": 237886247465244
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 480,
+		"height": 640,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9097394,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,152 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 484196933619799,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"editorNewInstanceTemplateName": "Default",
+	"instanceVariables": [
+		{
+			"name": "mid_air_nudges",
+			"type": "number",
+			"desc": "",
+			"show": false,
+			"sid": 123852712020496
+		},
+		{
+			"name": "melt",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 867007279280196
+		},
+		{
+			"name": "slope_force",
+			"type": "number",
+			"desc": "",
+			"show": false,
+			"sid": 115020781148357
+		},
+		{
+			"name": "lock_vector_y",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 952711775564117
+		},
+		{
+			"name": "last_vector_x",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 462187567551008
+		},
+		{
+			"name": "slingshot_speed_x",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 939322523797437
+		},
+		{
+			"name": "slingshot_speed_y",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 655757674866075
+		},
+		{
+			"name": "held",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 875493979730619
+		},
+		{
+			"name": "progress",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 873703471052563
+		},
+		{
+			"name": "initial_click_x",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 717355741444538
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 111458197014783
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 452836339627622
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 388298334152612
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 287780171179617
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.96875,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2905,
+						"collisionPoly": {
+							"points": [
+								0.03125,
+								0.03125,
+								0.96875,
+								0.03125,
+								0.96875,
+								0.96875,
+								0.03125,
+								0.96875
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Particles",
+								"x": 0,
+								"y": 1
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 306981099890920,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 12
+			}
+		],
+		"subfolders": []
+	}
+}
